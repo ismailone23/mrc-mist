@@ -110,7 +110,7 @@ export default function Home() {
       </div>
       <div className="bg-[url(/rover-mist.jpeg)] bg-cover bg-fixed w-full bg-no-repeat">
         <div className="w-full h-full bg-black opacity-85 flex items-center justify-center">
-          <div className="max-w-7xl mt-20 flex flex-col w-full my-20">
+          <div className="max-w-7xl mt-20 flex flex-col px-4 w-full my-20">
             <div className="grid md:grid-cols-2 grid-cols-1 my-20">
               <h1 className="font-semibold text-3xl font-origintech">
                 Join MIST Robotics Club: Your Gateway to Innovation and
