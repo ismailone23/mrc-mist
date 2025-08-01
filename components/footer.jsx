@@ -22,15 +22,15 @@ export default function Footer() {
               src={"/mrc-logo.png"}
               alt="mrc_logo"
             />
-            <div className="flex flex-col px-2 gap-2 mt-5">
-              <div className="flex flex-col gap-1">
+            <div className="flex flex-col px-2 gap-2 w-full mt-5">
+              <div className="flex flex-col gap-1 w-full">
                 <h1 className="font-semibold">Address:</h1>
                 <p className="text-sm">
                   Military Institute of Science and Technology, Mirpur
                   Cantonment, Dhaka-1216, Bangladesh
                 </p>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col w-full">
                 <h1 className="font-semibold">Contact:</h1>
                 <Link className="text-sm" href={"tel:+8801719323908"}>
                   +8801719323908
@@ -123,7 +123,7 @@ export default function Footer() {
           </div>
           <div className="col-span-2 flex flex-col">
             <hr />
-            <div className="justify-between flex py-4">
+            <div className="justify-between flex py-4 sm:flex-row flex-col">
               <div className="flex gap-2 items-center">
                 <Copyright className="w-4" />
                 <p>
