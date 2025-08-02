@@ -90,3 +90,40 @@ export const copyRightLink = [
     title: "cokkies settings",
   },
 ];
+export const events = [
+  {
+    imageSrc: "/orientation.jpg",
+    title:
+      "This year on 16th March Mist Robotics Club organized an orientation ceremony to give an official reception to its new members",
+    para: "",
+  },
+  {
+    imageSrc: "/weekly.jpg",
+    title:
+      "The weekly meeting is held on every week on the basis of weekly progress, accomplishments and future projects.",
+    para: "",
+  },
+  {
+    imageSrc: "/ceremony.png",
+    title:
+      "This year on 16th March Mist Robotics Club organized an orientation ceremony to give an official reception to its new members",
+    para: "",
+  },
+];
+export const projects = [
+  {
+    imageSrc: "/renewable-energy.jpg",
+    title: "Alice Johnson (Club President)",
+    para: "Alice leads our team with a vision for innovation and collaboration.",
+  },
+  {
+    imageSrc: "/autonomous_car.jpg",
+    title: "Mr. X",
+    para: "lorem iplsum",
+  },
+  {
+    imageSrc: "/arduino.jpg",
+    title: "Mr. X",
+    para: "lorem iplsum",
+  },
+];
