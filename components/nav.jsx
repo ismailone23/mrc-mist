@@ -37,6 +37,7 @@ export default function Navbar() {
           <div className="md:flex flex-row hidden gap-x-4 justify-baseline">
             {links.map((link, i) => (
               <Link
+                onClick={() => setIsOpen(false)}
                 className={`uppercase ${
                   path == link.href ? "text-[#67E78B]" : "text-white"
                 } font-origintech text-sm hover:text-[#67E78B] font-semibold`}
@@ -73,6 +74,7 @@ export default function Navbar() {
           <div className="flex flex-col space-y-4">
             {links.map((link, i) => (
               <Link
+                onClick={() => setIsOpen(false)}
                 className={`uppercase ${
                   path === link.href ? "text-[#67E78B]" : "text-white"
                 } font-origintech md:text-sm text-lg font-semibold transition-colors duration-300`}

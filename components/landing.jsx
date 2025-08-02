@@ -37,15 +37,29 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="w-full relative items-end">
-              <Image
-                src={"/langing-image.png"}
-                width={570}
-                height={430}
-                alt="hero_image"
-                className="object-contain lg:w-xl md:w-lg w-full"
-              />
+            <div className="w-full flex items-end">
+              <div className="relative w-full max-w-[570px] mx-auto">
+                <Image
+                  src="/hero_bg.png"
+                  width={570}
+                  height={430}
+                  alt="hero_image"
+                  className="w-full h-auto object-contain"
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Image
+                    src="/cog.png"
+                    width={300}
+                    height={300}
+                    alt="cog"
+                    style={{ animationDuration: "10s" }}
+                    className="w-2/3 animate-spin transition-all max-w-[300px] object-contain"
+                  />
+                </div>
+              </div>
             </div>
+
             <FloatingCrosses count={4} interval={3000} />
           </div>
         </div>
