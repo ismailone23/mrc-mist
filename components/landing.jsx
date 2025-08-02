@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Navbar from "./nav";
+import FloatingCrosses from "./floating-crosses";
 
 export default function Landing() {
   return (
     <div className="w-full h-screen bg-gradient-to-b from-[#2B2C32] to-[#000000]">
-      <div className="w-full px-4 flex flex-col h-full bg-[url(/pattern.png)]">
+      <div className="w-full flex flex-col h-full bg-[url(/pattern.png)]">
         <Navbar />
-        <div className="w-full flex h-full justify-center items-center">
+        <div className="w-full px-4 flex h-full justify-center items-center">
           <div className="max-w-7xl justify-between w-full md:grid md:grid-cols-2 flex flex-col items-center">
             <div className="flex relative justify-between items-center w-full">
               <div className="w-full justify-between h-full flex flex-col">
@@ -18,15 +19,6 @@ export default function Landing() {
                   className="object-contain lg:w-72 w-52"
                 />
                 <div className="relative h-full justify-center flex flex-col">
-                  <div className="absolute right-5 md:block hidden top-0">
-                    <Image
-                      src={"/cross.png"}
-                      width={30}
-                      height={30}
-                      alt="cross"
-                      className="object-contain"
-                    />
-                  </div>
                   <div className="flex gap-x-5 items-start">
                     <h1 className="lg:text-5xl text-4xl pb-4 font-origintech">
                       SOAR HIGH,
@@ -54,42 +46,7 @@ export default function Landing() {
                 className="object-contain lg:w-xl md:w-lg w-full"
               />
             </div>
-            <div className="absolute left-20 bottom-10">
-              <Image
-                src={"/cross.png"}
-                width={30}
-                height={30}
-                alt="cross"
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute right-20 bottom-20">
-              <Image
-                src={"/cross.png"}
-                width={30}
-                height={30}
-                alt="cross"
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute right-20 top-20">
-              <Image
-                src={"/cross.png"}
-                width={30}
-                height={30}
-                alt="cross"
-                className="object-contain"
-              />
-            </div>
-            <div className="absolute left-10 top-30">
-              <Image
-                src={"/cross.png"}
-                width={30}
-                height={30}
-                alt="cross"
-                className="object-contain"
-              />
-            </div>
+            <FloatingCrosses count={4} interval={3000} />
           </div>
         </div>
       </div>

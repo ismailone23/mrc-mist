@@ -108,11 +108,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url(/rover-mist.jpeg)] bg-cover bg-fixed w-full bg-no-repeat">
-        <div className="w-full h-full bg-black opacity-85 flex items-center justify-center">
-          <div className="max-w-7xl mt-20 flex flex-col px-4 w-full my-20">
-            <div className="grid md:grid-cols-2 grid-cols-1 my-20">
-              <h1 className="font-semibold text-3xl font-origintech">
+      <div className="bg-[url(/rover-mist.jpeg)] bg-cover relative bg-center bg-fixed w-full bg-no-repeat">
+        <div className="w-full h-full bg-black opacity-85 flex items-center z-0 justify-center absolute top-0 left-0" />
+        <div className="w-full h-full flex items-center z-0 justify-center">
+          <div className="max-w-7xl mt-20 flex flex-col px-4 w-full my-20 z-10">
+            <div className="grid md:grid-cols-2 gap-y-5 grid-cols-1 my-20">
+              <h1 className="font-semibold text-3xl font-origintech break-words">
                 Join MIST Robotics Club: Your Gateway to Innovation and
                 Collaboration
               </h1>
@@ -125,7 +126,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid lg:grid-cols-3 gap-5 w-full md:grid-cols-2 grid-cols-1">
-              <div className="flex flex-col gap-2 w-full">
+              <div className="flex hover:scale-105 transition-all duration-500 flex-col gap-2 w-full">
                 <div className="w-full h-52 overflow-hidden">
                   <Image
                     alt="drone_show"
@@ -146,7 +147,7 @@ export default function Home() {
                   Join <ChevronRight />
                 </button>
               </div>
-              <div className="flex flex-col gap-2 w-full">
+              <div className="flex hover:scale-105 transition-all duration-500 flex-col gap-2 w-full">
                 <div className="w-full h-52 overflow-hidden">
                   <Image
                     alt="mars_rover"
@@ -166,7 +167,7 @@ export default function Home() {
                   Learn <ChevronRight />
                 </button>
               </div>
-              <div className="flex flex-col gap-2 w-full">
+              <div className="flex hover:scale-105 transition-all duration-500 flex-col gap-2 w-full">
                 <div className="w-full h-52 overflow-hidden">
                   <Image
                     alt="communication"
@@ -205,10 +206,10 @@ export default function Home() {
                 future of technology.
               </p>
               <div className="flex gap-2">
-                <button className="px-5 py-2 bg-white hover:bg-[#67E78B] text-black font-origintech">
+                <button className="px-5 py-2 transition-all duration-300 bg-white hover:bg-[#67E78B] text-black font-origintech">
                   JOIN
                 </button>
-                <button className="px-5 py-2 text-white hover:bg-[#67E78B] hover:text-black hover:border-[#67E78B] font-origintech bg-black border border-white">
+                <button className="px-5 py-2 transition-all duration-300 text-white hover:bg-[#67E78B] hover:text-black hover:border-[#67E78B] font-origintech bg-black border border-white">
                   Learn More
                 </button>
               </div>

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Landing from "@/components/landing";
 import "./globals.css";
 import Footer from "@/components/footer";
+import TopLoader from "@/components/TopLoader";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
         className={`${robotoSans.variable} ${robotoMono.variable} ${originTech.variable} antialiased`}
       >
         <Landing />
+        <TopLoader />
         {children}
         <Footer />
       </body>
