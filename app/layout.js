@@ -4,9 +4,10 @@ import Landing from "@/components/landing";
 import "./globals.css";
 import Footer from "@/components/footer";
 import TopLoader from "@/components/TopLoader";
+import Navbar from "@/components/nav";
 
 const robotoSans = Roboto({
-  variable: "--font-roboto-sans",
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -77,8 +78,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${robotoSans.variable} ${robotoMono.variable} ${originTech.variable} antialiased`}
       >
-        <Landing />
         <TopLoader />
+        <Navbar />
+        <Landing />
         {children}
         <Footer />
       </body>

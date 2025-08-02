@@ -1,3 +1,4 @@
+import { copyRightLink, footerLink } from "@/constants";
 import {
   Copyright,
   Facebook,
@@ -15,7 +16,7 @@ export default function Footer() {
     <div className="w-full bg-gradient-to-b from-[#2B2C32] to-[#000000]">
       <div className="w-full px-4 flex flex-col items-center h-full bg-[url(/pattern.png)]">
         <div className="max-w-7xl items-end justify-between gap-5 w-full mt-10 flex flex-col">
-          <div className="w-full flex justify-between gap-5 sm:flex-row flex-col items-start">
+          <div className="w-full flex justify-between gap-5 sm:flex-row flex-col items-start md:items-end">
             <div className="w-full flex flex-col">
               <Image
                 width={200}
@@ -25,19 +26,24 @@ export default function Footer() {
               />
               <div className="flex flex-col gap-2 w-full mt-5">
                 <div className="flex flex-col gap-1 w-full">
-                  <h1 className="font-semibold">Address:</h1>
-                  <p className="text-sm">
+                  <h1 className="font-semibold font-roboto text-white">
+                    Address:
+                  </h1>
+                  <p className="text-sm font-roboto text-white">
                     Military Institute of Science and Technology, Mirpur
                     Cantonment, Dhaka-1216, Bangladesh
                   </p>
                 </div>
                 <div className="flex flex-col w-full">
-                  <h1 className="font-semibold">Contact:</h1>
-                  <Link className="text-sm" href={"tel:+8801719323908"}>
+                  <h1 className="font-semibold font-roboto">Contact:</h1>
+                  <Link
+                    className="text-sm font-roboto text-white"
+                    href={"tel:+8801719323908"}
+                  >
                     +8801719323908
                   </Link>
                   <Link
-                    className="text-sm"
+                    className="text-sm font-roboto text-white"
                     href={"mailto:roboticsclub@mist.ac.bd"}
                   >
                     roboticsclub@mist.ac.bd
@@ -62,64 +68,17 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-5 justify-end">
-              <div className="flex flex-col">
-                <ul>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Join Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Evenets Calender
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="/projects">
-                      Our Project
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Get Involved
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Member Login
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col">
-                <ul>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Contact us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Social Media
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="/projects">
-                      FAQ Section
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      Volunteer Opportunities
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:underline" href="#">
-                      News Updates
-                    </Link>
-                  </li>
-                </ul>
+            <div className="flex w-full items-end justify-end">
+              <div className="grid grid-cols-2 ">
+                {footerLink.map((link, i) => (
+                  <Link
+                    href={link.href}
+                    key={i}
+                    className="text-sm hover:underline transition-all font-roboto duration-500 capitalize"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -127,22 +86,24 @@ export default function Footer() {
             <hr />
             <div className="justify-between flex py-4 sm:flex-row flex-col">
               <div className="flex gap-2 md:items-center items-start">
-                <Copyright className="w-4" />
-                <p>
-                  {new Date().getFullYear()} MIST Robotics Club. All rights
-                  reserved.
+                <Copyright className="w-4 text-white" />
+                <p className="text-white font-roboto text-sm">
+                  <span className="font-semibold font-roboto">
+                    {new Date().getFullYear()}
+                  </span>
+                  MIST Robotics Club. All rights reserved.
                 </p>
               </div>
               <div className="flex gap-5">
-                <Link className="underline" href={"#"}>
-                  Privacy Policy
-                </Link>
-                <Link className="underline" href={"#"}>
-                  Terms Condition
-                </Link>
-                <Link className="underline" href={"#"}>
-                  Cookies Settings
-                </Link>
+                {copyRightLink.map((link, i) => (
+                  <Link
+                    key={i}
+                    className="underline capitalize font-roboto text-sm text-white"
+                    href={link.href}
+                  >
+                    {link.title}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

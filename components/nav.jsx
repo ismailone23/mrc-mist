@@ -21,46 +21,56 @@ export default function Navbar() {
   });
 
   return (
-    <nav className="w-full flex items-center justify-center">
-      <div className="max-w-7xl px-4 w-full items-center flex flex-row justify-between">
-        <Link href={"/"}>
-          <Image
-            src={"/mrc-logo.png"}
-            width={150}
-            height={70}
-            style={{ marginTop: 10 }}
-            className="object-contain lg:w-40 md:w-32"
-            alt="MRC_LOGO"
-          />
-        </Link>
-        <div className="flex flex-row gap-x-4 justify-between items-center">
-          <div className="md:flex flex-row hidden gap-x-4 justify-baseline">
-            {links.map((link, i) => (
-              <Link
-                onClick={() => setIsOpen(false)}
-                className={`uppercase ${
-                  path == link.href ? "text-[#67E78B]" : "text-white"
-                } font-origintech text-sm hover:text-[#67E78B] font-semibold`}
-                key={i}
-                href={link.href}
-              >
-                {link.title}
-              </Link>
-            ))}
+    <>
+      <nav
+        className={`w-full fixed top-0 pb-4 bg-black/30 backdrop-blur-md z-50 ${
+          isOpen ? "hidden" : "flex"
+        } items-center justify-center`}
+      >
+        <div className="max-w-7xl px-4 w-full items-center flex flex-row justify-between">
+          <Link href={"/"}>
+            <Image
+              src={"/mrc-logo.png"}
+              width={120}
+              height={70}
+              style={{ marginTop: 10 }}
+              className="object-contain lg:w-36 md:w-32"
+              alt="MRC_LOGO"
+            />
+          </Link>
+          <div className="flex flex-row gap-x-4 justify-between items-center">
+            <div className="md:flex flex-row items-center hidden gap-x-4 justify-baseline">
+              {links.map((link, i) => (
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className={`uppercase ${
+                    path == link.href ? "text-[#67E78B]" : "text-white"
+                  } font-origintech lg:text-base text-sm hover:text-[#67E78B] font-semibold`}
+                  key={i}
+                  href={link.href}
+                >
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+            <button title="search">
+              <Search className="w-6 h-6 hover:text-[#67E78B] text-white" />
+            </button>
+            <button
+              onClick={handleOpen}
+              title="menu"
+              className="md:hidden block"
+            >
+              <Menu className="w-7 h-7 text-white" />
+            </button>
           </div>
-          <button>
-            <Search className="w-5 h-5 hover:text-[#67E78B]" />
-          </button>
-          <button onClick={handleOpen} className="md:hidden block">
-            <Menu className="w-7 h-7" />
-          </button>
         </div>
-      </div>
+      </nav>
       <div
-        className={`absolute left-0 top-0 w-full h-full z-10 
+        className={`fixed left-0 top-0 w-full h-full
     flex justify-center items-center 
     bg-gradient-to-b from-[#2B2C32] to-[#000000] 
-    transition-all duration-1000 
+    transition-all z-30 duration-1000 
     ${
       isOpen
         ? "opacity-100 translate-y-0"
@@ -68,8 +78,11 @@ export default function Navbar() {
     }`}
       >
         <div className="max-w-7xl h-full w-full px-4 flex flex-col justify-center items-center relative transition-all duration-1000">
-          <button onClick={handleOpen} className="absolute right-5 bottom-5">
-            <XIcon />
+          <button
+            onClick={handleOpen}
+            className="absolute text-white right-8 bottom-8"
+          >
+            <XIcon className="w-7 h-7 text-white" />
           </button>
           <div className="flex flex-col space-y-4">
             {links.map((link, i) => (
@@ -87,6 +100,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 }

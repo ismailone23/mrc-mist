@@ -28,3 +28,65 @@ export const links = [
     title: "collaborations",
   },
 ];
+
+export const footerLink = [
+  {
+    href: "#",
+    title: "join us",
+  },
+  {
+    href: "#",
+    title: "event calender",
+  },
+  {
+    href: "#",
+    title: "our project",
+  },
+  {
+    href: "#",
+    title: "get involved",
+  },
+  {
+    href: "#",
+    title: "member login",
+  },
+  {
+    href: "#",
+    title: "contact us",
+  },
+  {
+    href: "#",
+    title: "social media",
+  },
+  {
+    href: "#",
+    title: "faq section",
+  },
+  {
+    href: "#",
+    title: "volunteer",
+  },
+  {
+    href: "#",
+    title: "opportunities",
+  },
+  {
+    href: "#",
+    title: "news updates",
+  },
+];
+
+export const copyRightLink = [
+  {
+    href: "#",
+    title: "privacy pollicy",
+  },
+  {
+    href: "#",
+    title: "terms condition",
+  },
+  {
+    href: "#",
+    title: "cokkies settings",
+  },
+];

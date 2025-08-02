@@ -6,10 +6,9 @@ export default function Landing() {
   return (
     <div className="w-full h-screen bg-gradient-to-b from-[#2B2C32] to-[#000000]">
       <div className="w-full flex flex-col h-full bg-[url(/pattern.png)]">
-        <Navbar />
         <div className="w-full px-4 flex h-full justify-center items-center">
           <div className="max-w-7xl justify-between w-full md:grid md:grid-cols-2 flex flex-col items-center">
-            <div className="flex relative justify-between items-center w-full">
+            <div className="flex relative justify-between md:items-center items-start w-full">
               <div className="w-full justify-between h-full flex flex-col">
                 <Image
                   src={"/loader.png"}
@@ -37,7 +36,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-end">
+            <div className="w-full flex">
               <div className="relative w-full max-w-[570px] mx-auto">
                 <Image
                   src="/hero_bg.png"

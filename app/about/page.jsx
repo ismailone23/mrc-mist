@@ -5,7 +5,7 @@ export default function page() {
     <div className="w-full items-center justify-center flex">
       <div className="max-w-7xl my-5 px-4 w-full flex-col gap-5 flex">
         <h1 className="text-center w-full font-bold text-3xl">About Us</h1>
-        <p className="text-sm text-center">
+        <p className="text-sm font-roboto text-center">
           Robotics involves design, construction, operation and use of robots.
           The mission of a Robotics Club is to spread knowledge about robotics
           and other robotics related aspects. We, MIST Robotics Club, try to do
@@ -15,7 +15,7 @@ export default function page() {
           combine and spread the knowledge and work together towards greater
           endeavors.
         </p>
-        <p className="text-sm text-center">
+        <p className="text-sm font-roboto text-center">
           MIST Robotics Club (MRC) commonly referred to as MRC was established
           on 2013. It is one of the most active and prestigious robotics clubs
           of the country functioning under the supervision of EECE department of
@@ -40,7 +40,7 @@ export default function page() {
             “Soar High, Sky is the Limit”
           </span>
         </p>
-        <p className="text-sm">
+        <p className="text-sm font-roboto">
           In January 2012. we some student of MIST had participated in a course
           of Micro-Controller in Pi Labs Bangladesh Ltd. At first, Rahid came
           with an idea of Robotics Club in MIST. He also proposed that we can
@@ -49,17 +49,17 @@ export default function page() {
           the club. And named it Robotic Society of MIST. After recognized by
           MIST Authority, it is named MIST Robotics Club.
         </p>
-        <p className="text-sm">Club Founder Member:</p>
+        <p className="text-sm font-roboto">Club Founder Member:</p>
         <ul className="pl-5 list-decimal">
-          <li className="text-sm">Rahid Zaman (ME)</li>
-          <li className="text-sm">Adib Ibne Yousuf (EECE)</li>
-          <li className="text-sm">Rowshon Ara Mannan (EECE)</li>
-          <li className="text-sm">Shamaun Sobhan Shohan (AE)</li>
-          <li className="text-sm">Shamir Shakir Shishir (CSE)</li>
-          <li className="text-sm">Saiful Azad (CSE)</li>
-          <li className="text-sm">Sajib Hasan (CSE)</li>
+          <li className="text-sm font-roboto">Rahid Zaman (ME)</li>
+          <li className="text-sm font-roboto">Adib Ibne Yousuf (EECE)</li>
+          <li className="text-sm font-roboto">Rowshon Ara Mannan (EECE)</li>
+          <li className="text-sm font-roboto">Shamaun Sobhan Shohan (AE)</li>
+          <li className="text-sm font-roboto">Shamir Shakir Shishir (CSE)</li>
+          <li className="text-sm font-roboto">Saiful Azad (CSE)</li>
+          <li className="text-sm font-roboto">Sajib Hasan (CSE)</li>
         </ul>
-        <p className="text-sm">
+        <p className="text-sm font-roboto">
           Now, we are taking some classes in weekend/holiday on Robotics/Micro
           Controller & spreading our knowledge among students. Motto: Soar
           high... Sky is the limit   MIST Robotics Club (MRC) commonly referred
