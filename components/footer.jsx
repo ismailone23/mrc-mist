@@ -16,7 +16,7 @@ export default function Footer() {
     <div className="w-full bg-gradient-to-b from-[#2B2C32] to-[#000000]">
       <div className="w-full px-4 flex flex-col items-center h-full bg-[url(/pattern.png)]">
         <div className="max-w-7xl items-end justify-between gap-5 w-full mt-10 flex flex-col">
-          <div className="w-full flex justify-between gap-5 sm:flex-row flex-col items-start md:items-end">
+          <div className="w-full flex justify-between gap-5 md:flex-row flex-col items-start md:items-end">
             <div className="w-full flex flex-col">
               <Image
                 width={200}
@@ -68,13 +68,13 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex w-full items-end justify-end">
-              <div className="grid grid-cols-2 ">
+            <div className="flex w-full md:items-end md:justify-end">
+              <div className="grid grid-cols-2 gap-2">
                 {footerLink.map((link, i) => (
                   <Link
                     href={link.href}
                     key={i}
-                    className="text-sm hover:underline transition-all font-roboto duration-500 capitalize"
+                    className="text-sm hover:underline transition-all font-semibold font-roboto duration-500 capitalize"
                   >
                     {link.title}
                   </Link>
