@@ -39,7 +39,7 @@ export default function Navbar() {
             />
           </Link>
           <div className="flex flex-row gap-x-4 justify-between items-center">
-            <div className="md:flex flex-row items-center hidden gap-x-4 justify-baseline">
+            <div className="md:flex flex-row items-center hidden gap-x-10 justify-baseline">
               {links.map((link, i) => (
                 <Link
                   onClick={() => setIsOpen(false)}
@@ -53,9 +53,6 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <button title="search">
-              <Search className="w-6 h-6 hover:text-[#67E78B] text-white" />
-            </button>
             <button
               onClick={handleOpen}
               title="menu"

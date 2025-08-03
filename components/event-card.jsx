@@ -8,7 +8,7 @@ export default function EventCard({
 }) {
   return (
     <div
-      className={`flex rounded-md overflow-hidden hover:scale-105 transition-all duration-300 flex-col bg-zinc-900 sm:max-w-80 w-full gap-2`}
+      className={`flex rounded-tr-xl rounded-bl-xl overflow-hidden hover:scale-105 transition-all duration-300 flex-col bg-zinc-900 sm:max-w-80 w-full gap-2`}
     >
       <div className="w-full sm:h-48 h-52">
         <Image

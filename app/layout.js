@@ -5,10 +5,15 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import TopLoader from "@/components/TopLoader";
 import Navbar from "@/components/nav";
+// Add AOS Provider component
+import AOSProvider from "@/components/aos-provider";
 
-const robotoSans = Roboto({
+const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
 const originTech = localFont({
@@ -26,6 +31,7 @@ const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
+
 export const metadata = {
   metadataBase: new URL("https://mrc.mist.com"),
   title: {
@@ -72,17 +78,21 @@ export const metadata = {
     images: ["/twitter-image.png"],
   },
 };
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${robotoSans.variable} ${robotoMono.variable} ${originTech.variable} antialiased`}
-      >
-        <TopLoader />
-        <Navbar />
-        <Landing />
-        {children}
-        <Footer />
+    <html
+      className={`${roboto.variable} ${robotoMono.variable} ${originTech.variable}`}
+      lang="en"
+    >
+      <body className={"antialiased"}>
+        <AOSProvider>
+          <TopLoader />
+          <Navbar />
+          <Landing />
+          {children}
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );

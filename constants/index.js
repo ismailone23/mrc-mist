@@ -32,10 +32,6 @@ export const links = [
 export const footerLink = [
   {
     href: "#",
-    title: "join us",
-  },
-  {
-    href: "#",
     title: "event calender",
   },
   {
@@ -70,24 +66,20 @@ export const footerLink = [
     href: "#",
     title: "opportunities",
   },
-  {
-    href: "#",
-    title: "news updates",
-  },
 ];
 
 export const copyRightLink = [
   {
     href: "#",
-    title: "privacy pollicy",
+    title: "Arisha",
   },
   {
     href: "#",
-    title: "terms condition",
+    title: "Imran",
   },
   {
     href: "#",
-    title: "cokkies settings",
+    title: "Ismail",
   },
 ];
 export const events = [

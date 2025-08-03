@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Navbar from "./nav";
 import FloatingCrosses from "./floating-crosses";
-
 export default function Landing() {
   return (
     <div className="w-full h-screen bg-gradient-to-b from-[#2B2C32] to-[#000000]">
@@ -9,7 +7,11 @@ export default function Landing() {
         <div className="w-full px-4 flex h-full justify-center items-center">
           <div className="max-w-7xl justify-between w-full md:grid md:grid-cols-2 flex flex-col items-center">
             <div className="flex relative justify-between md:items-center items-start w-full">
-              <div className="w-full justify-between h-full flex flex-col">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="800"
+                className="w-full justify-between h-full flex flex-col"
+              >
                 <Image
                   src={"/loader.png"}
                   width={350}
@@ -36,7 +38,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex">
+            <div data-aos="fade-up" className="w-full flex">
               <div className="relative w-full max-w-[570px] mx-auto">
                 <Image
                   src="/hero_bg.png"
@@ -58,8 +60,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-
-            <FloatingCrosses count={4} interval={3000} />
+            <FloatingCrosses count={10} interval={3000} />
           </div>
         </div>
       </div>
