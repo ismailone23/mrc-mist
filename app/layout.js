@@ -31,7 +31,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://mrc.mist.com"),
+  metadataBase: new URL("https://mrc.frozenismail.xyz"),
   title: {
     default: "MRC - MIST Robotics Club",
     template: "%s | MIST Robotics Club",
@@ -56,7 +56,7 @@ export const metadata = {
     title: "MRC - MIST Robotics Club",
     description:
       "Premier robotics society at Military Institute of Science & Technology",
-    url: "https://mrc.mist.com",
+    url: "https://mrc.frozenismail.xyz",
     siteName: "MRC MIST",
     images: [
       {
