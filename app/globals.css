@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Force dark mode colors regardless of system preference */
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -13,12 +14,6 @@
   --font-origintech: var(--font-origintech);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 @layer base {
   *, *::before, *::after {
     margin: 0;
@@ -34,6 +29,7 @@
     @apply font-sans;
   }
 }
+
 #nprogress {
   pointer-events: none;
 }
@@ -47,6 +43,7 @@
   width: 100%;
   height: 3px;
 }
+
 @keyframes fadeInOut {
   0%, 100% { opacity: 0; transform: scale(0.8); }
   20%, 80% { opacity: 1; transform: scale(1); }
@@ -55,7 +52,6 @@
 .animate-fadeInOut {
   animation: fadeInOut 3s ease-in-out infinite;
 }
-
 
 .aos-animate {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);

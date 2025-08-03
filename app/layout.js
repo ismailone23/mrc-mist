@@ -29,7 +29,6 @@ const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
-
 export const metadata = {
   metadataBase: new URL("https://mrc.frozenismail.xyz"),
   title: {
@@ -76,7 +75,6 @@ export const metadata = {
     images: ["/twitter-image.png"],
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html

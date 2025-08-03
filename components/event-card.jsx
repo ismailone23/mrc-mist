@@ -20,10 +20,12 @@ export default function EventCard({
         />
       </div>
       <div className="px-2 pb-2">
-        <h1 className="font-roboto hover:underline transition-all duration-700 line-clamp-2 text-ellipsis">
+        <h1 className="font-roboto text-white hover:underline transition-all duration-700 line-clamp-2 text-ellipsis">
           {title}
         </h1>
-        <p className="font-roboto text-sm line-clamp-3 text-ellipsis">{para}</p>
+        <p className="font-roboto text-white text-sm line-clamp-3 text-ellipsis">
+          {para}
+        </p>
       </div>
     </div>
   );
