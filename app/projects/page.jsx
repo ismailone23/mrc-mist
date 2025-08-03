@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className="w-full flex items-center justify-center">
       <div className="max-w-7xl w-full flex px-4 flex-col">
-        <div className="flex items-center flex-col gap-4 mt-20 w-full">
+        <div className="flex items-center flex-col gap-4 mt-5 w-full">
           <h1
             data-aos="fade-up"
             data-aos-duration="500"

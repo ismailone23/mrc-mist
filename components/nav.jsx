@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`w-full fixed top-0 pb-4 bg-black/30 backdrop-blur-md z-50 ${
+        className={`w-full sticky top-0 pb-4 bg-black/30 backdrop-blur-md z-50 ${
           isOpen ? "hidden" : "flex"
         } items-center justify-center`}
       >

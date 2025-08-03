@@ -1,11 +1,9 @@
 import { Roboto, Roboto_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import Landing from "@/components/landing";
 import "./globals.css";
 import Footer from "@/components/footer";
 import TopLoader from "@/components/TopLoader";
 import Navbar from "@/components/nav";
-// Add AOS Provider component
 import AOSProvider from "@/components/aos-provider";
 
 const roboto = Roboto({
@@ -89,7 +87,6 @@ export default function RootLayout({ children }) {
         <AOSProvider>
           <TopLoader />
           <Navbar />
-          <Landing />
           {children}
           <Footer />
         </AOSProvider>
