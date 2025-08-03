@@ -71,7 +71,7 @@ export const footerLink = [
 export const copyRightLink = [
   {
     href: "#",
-    title: "Arisha",
+    title: "Ashria",
   },
   {
     href: "#",

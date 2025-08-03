@@ -39,7 +39,7 @@ export default function Footer() {
               </p>
               <Link
                 href={"#"}
-                className="capitalize hover:underline hover:decoration-dashed items-center font-bold flex gap-2"
+                className="capitalize hover:underline text-white hover:decoration-dashed items-center font-bold flex gap-2"
               >
                 join us
                 <button className="w-5 cursor-pointer h-5 rounded-full flex items-center justify-center bg-orange-500 ">
