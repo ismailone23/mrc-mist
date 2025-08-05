@@ -5,7 +5,7 @@ export default function Landing() {
     <div className="w-full h-screen bg-gradient-to-b from-[#2B2C32] to-[#000000]">
       <div className="w-full flex flex-col h-full bg-[url(/pattern.png)]">
         <div className="w-full px-4 flex h-full justify-center items-center">
-          <div className="max-w-7xl justify-between w-full md:grid md:grid-cols-2 flex flex-col items-center">
+          <div className="container justify-between w-full md:grid md:grid-cols-2 flex flex-col items-center">
             <div className="flex relative justify-between md:items-center items-start w-full">
               <div
                 data-aos="fade-up"
