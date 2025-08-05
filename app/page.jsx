@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="w-full items-center flex flex-col justify-center">
       <Landing />
-      <div className="max-w-7xl w-full flex flex-col px-4 items-start">
+      <div className="container flex flex-col px-5 items-start">
         <div
           className="w-full my-10"
           data-aos="fade-up"
@@ -82,7 +82,7 @@ export default function Home() {
       <div className="bg-[url(/rover-mist.jpeg)] bg-cover relative bg-center bg-fixed w-full bg-no-repeat">
         <div className="w-full h-full bg-black opacity-85 flex items-center z-0 justify-center absolute top-0 left-0" />
         <div className="w-full h-full flex items-center z-0 justify-center">
-          <div className="max-w-7xl mt-20 flex flex-col px-4 w-full my-20 z-10">
+          <div className="container mt-20 flex flex-col px-5 my-20 z-10">
             <div className="grid md:grid-cols-2 gap-y-5 grid-cols-1 my-20">
               <h1
                 data-aos="fade-right"
@@ -145,7 +145,7 @@ export default function Home() {
       </div>
       <div className=" mt-20 flex w-full ">
         <div className="w-full flex gap-5 items-center flex-col">
-          <div className="max-w-7xl grid px-4 md:grid-cols-2 w-full grid-cols-1">
+          <div className="container grid px-5 md:grid-cols-2 w-full grid-cols-1">
             <h1
               data-aos="fade-left"
               data-aos-duration="800"

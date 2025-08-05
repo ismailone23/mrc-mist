@@ -27,7 +27,7 @@ export default function Navbar() {
           isOpen ? "hidden" : "flex"
         } items-center justify-center`}
       >
-        <div className="max-w-7xl px-4 w-full items-center flex flex-row justify-between">
+        <div className="container px-5 w-full items-center flex flex-row justify-between">
           <Link href={"/"}>
             <Image
               src={"/mrc-logo.png"}

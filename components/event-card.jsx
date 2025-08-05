@@ -8,7 +8,7 @@ export default function EventCard({
 }) {
   return (
     <div
-      className={`flex rounded-tr-xl rounded-bl-xl overflow-hidden hover:scale-105 transition-all duration-300 flex-col bg-zinc-900 sm:max-w-80 w-full gap-2`}
+      className={`flex rounded-tr-xl pb-2 rounded-bl-xl overflow-hidden hover:scale-105 transition-all duration-300 flex-col bg-zinc-900 sm:max-w-80 w-full gap-2`}
     >
       <div className="w-full sm:h-48 h-52">
         <Image
@@ -19,11 +19,11 @@ export default function EventCard({
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="px-2 pb-2">
-        <h1 className="font-roboto text-white hover:underline transition-all duration-700 line-clamp-2 text-ellipsis">
+      <div className="px-2 pb-2 gap-y-1 flex flex-col">
+        <h1 className="font-semibold text-white hover:underline transition-all duration-700 line-clamp-2 text-ellipsis">
           {title}
         </h1>
-        <p className="font-roboto text-white text-sm line-clamp-3 text-ellipsis">
+        <p className="font-base text-white text-sm line-clamp-3 text-ellipsis">
           {para}
         </p>
       </div>
