@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full items-center flex flex-col justify-center">
+    <div className="w-full overflow-x-hidden items-center flex flex-col justify-center">
       <Landing />
       <div className="container flex flex-col px-5 items-start">
         <div
