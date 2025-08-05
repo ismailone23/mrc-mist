@@ -10,25 +10,18 @@ export default function AOSProvider({ children }) {
   useEffect(() => {
     AOS.init({
       // Animation duration in milliseconds
-      duration: 1000,
+      duration: 500,
 
-      // Whether animation should happen only once - while scrolling down
-      once: true,
+      
 
       // Reduced offset to trigger animations sooner
       offset: 50,
 
-      // Easing function for animations
-      easing: "ease-out-cubic",
+     
 
-      // Delay between each animated element (good for staggered effects)
-      delay: 0,
+      
 
-      // Disable animations on mobile devices (optional)
-      disable: function () {
-        // Disable on mobile devices with screen width < 768px
-        return window.innerWidth < 768;
-      },
+      
 
       // Animation start event
       startEvent: "DOMContentLoaded",

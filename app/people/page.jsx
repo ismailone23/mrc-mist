@@ -10,7 +10,7 @@ const page = () => {
     AOS.init();
   }, []);
   return (
-    <div className="overflow-x-hidden px-5 py-24">
+   <div className="overflow-x-hidden px-5 py-12">
       <div className="py-10 text-center">
         <h4 className="text-sm my-5" data-aos="fade-down">
           Innovate

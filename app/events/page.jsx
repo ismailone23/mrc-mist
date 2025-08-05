@@ -4,24 +4,24 @@ import React from "react";
 
 export default function Events() {
   return (
-    <div className="w-full flex items-center justify-center">
+   <div className="w-full flex items-center justify-center">
       <div className="container flex px-4 flex-col">
         <div className="flex items-center flex-col gap-1 mt-5 w-full">
           <h1
             data-aos="fade-down"
             data-aos-duration="600"
-            className="text-4xl font-bold"
+            className="text-4xl font-extrabold md:text-6xl my-5"
           >
             Events
           </h1>
-          <p data-aos="fade-down" data-aos-duration="800" className="text-sm">
+          <p data-aos="fade-down" data-aos-duration="800" className="text-base">
             Events Organized By MRC
           </p>
         </div>
         <div
           data-aos="fade-up"
           data-aos-duration="800"
-          className="flex flex-wrap gap-5 my-10 w-full"
+          className="flex flex-wrap gap-5 my-10   w-full"
         >
           {events.map((event, i) => (
             <EventCard
@@ -29,7 +29,7 @@ export default function Events() {
               i={i}
               title={event.title}
               imageSrc={event.imageSrc}
-              para={event.para}
+              para={event.para} 
             />
           ))}
         </div>

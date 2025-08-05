@@ -1,22 +1,7 @@
 import Image from "next/image";
 
-const tableData = [
-  [
-    { src: "/dummy.png", alt: "img1", colSpan: 2 },
-    { src: "/dummy.png", alt: "img2" },
-    { src: "/dummy.png", alt: "img3" },
-  ],
-  [
-    { src: "/dummy.png", alt: "img4" },
-    { src: "/dummy.png", alt: "img5" },
-    { src: "/dummy.png", alt: "img6", colSpan: 2 },
-  ],
-  [
-    { src: "/dummy.png", alt: "img1", colSpan: 2 },
-    { src: "/dummy.png", alt: "img2" },
-    { src: "/dummy.png", alt: "img3" },
-  ],
-];
+import { tableData } from "@/constants";
+
 
 const flatImages = tableData.flat();
 
@@ -28,7 +13,7 @@ const ImageDisplay = () => {
           {tableData.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((item, i) => (
-                <td key={i} colSpan={item.colSpan || 1} data-aos="fade-up">
+                <td key={i} colSpan={item.colSpan || 1} data-aos="fade-up" className="p-1">
                   <Image
                     width={300}
                     height={200}

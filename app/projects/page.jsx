@@ -4,17 +4,17 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="w-full flex items-center justify-center">
+  <div className="w-full flex items-center justify-center">
       <div className="container flex px-4 flex-col">
         <div className="flex items-center flex-col gap-1 mt-5 w-full">
           <h1
             data-aos="fade-down"
             data-aos-duration="500"
-            className="text-4xl font-bold"
+            className="text-4xl md:text-6xl my-5 font-extrabold"
           >
             Projects
           </h1>
-          <p data-aos="fade-down" data-aos-duration="600" className="text-sm">
+          <p data-aos="fade-down" data-aos-duration="600" className="text-base">
             There are project showcased developed by the MRC in past with
             description
           </p>

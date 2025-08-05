@@ -3,7 +3,9 @@ import Gallery from "./Components/index";
 
 const page = () => {
   return (
-    <div className="container mx-auto px-5 py-24 overflow-x-hidden">
+    <>
+    
+    <div className="container mx-auto px-5 py-12 overflow-x-hidden">
       <div className="py-10 text-center">
         <h2
           className="text-4xl md:text-6xl mb-4 font-extrabold"
@@ -17,6 +19,7 @@ const page = () => {
       </div>
       <Gallery />
     </div>
+    </>
   );
 };
 

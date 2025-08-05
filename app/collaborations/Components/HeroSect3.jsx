@@ -49,7 +49,7 @@ const HeroSect3 = () => {
                 50%
               </h2>
               <p
-                className="font-light text-sm"
+                className="font-light "
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -62,9 +62,9 @@ const HeroSect3 = () => {
           <Image
             width={200}
             height={200}
-            className="object-cover object-center w-full"
+            className="object-cover object-center w-full h-96"
             alt="hero"
-            src="/dummy.png"
+            src="/ceremony.png"
           />
         </div>
       </div>

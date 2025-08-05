@@ -3,9 +3,9 @@ import React from "react";
 export default function page() {
   return (
     <div className="w-full items-center justify-center flex">
-      <div className="container my-5 px-5 w-full flex-col gap-5 flex">
+      <div className="container my-12 px-5 w-full flex-col gap-5 flex">
         <h1
-          className="text-center w-full font-bold text-4xl"
+          className="text-center w-full font-extrabold text-4xl md:text-6xl"
           data-aos="fade-down"
           data-aos-duration="600"
         >
@@ -14,7 +14,7 @@ export default function page() {
         <p
           data-aos="fade-up"
           data-aos-duration="700"
-          className="text-sm font-roboto text-center"
+          className="text-base font-roboto text-center"
         >
           Robotics involves design, construction, operation and use of robots.
           The mission of a Robotics Club is to spread knowledge about robotics
@@ -28,7 +28,7 @@ export default function page() {
         <p
           data-aos="fade-up"
           data-aos-duration="700"
-          className="text-sm font-roboto text-center"
+          className="text-base font-roboto text-center"
         >
           MIST Robotics Club (MRC) commonly referred to as MRC was established
           on 2013. It is one of the most active and prestigious robotics clubs
@@ -50,14 +50,14 @@ export default function page() {
           as reflected by its motto,
           <br />
           <br />
-          <span className="font-bold text-lg">
+          <span className="font-bold text-2xl py-10">
             “Soar High, Sky is the Limit”
           </span>
         </p>
         <p
           data-aos="fade-up"
           data-aos-duration="800"
-          className="text-sm font-roboto"
+          className="text-base font-roboto"
         >
           In January 2012. we some student of MIST had participated in a course
           of Micro-Controller in Pi Labs Bangladesh Ltd. At first, Rahid came
@@ -70,27 +70,27 @@ export default function page() {
         <p
           data-aos="fade-up"
           data-aos-duration="900"
-          className="text-sm font-roboto"
+          className="text-base font-roboto"
         >
           Club Founder Member:
         </p>
         <ul
           data-aos="fade-up"
           data-aos-duration="900"
-          className="pl-5 list-decimal"
+          className="pl-5 space-y-2 font-semibold list-decimal"
         >
-          <li className="text-sm font-roboto">Rahid Zaman (ME)</li>
-          <li className="text-sm font-roboto">Adib Ibne Yousuf (EECE)</li>
-          <li className="text-sm font-roboto">Rowshon Ara Mannan (EECE)</li>
-          <li className="text-sm font-roboto">Shamaun Sobhan Shohan (AE)</li>
-          <li className="text-sm font-roboto">Shamir Shakir Shishir (CSE)</li>
-          <li className="text-sm font-roboto">Saiful Azad (CSE)</li>
-          <li className="text-sm font-roboto">Sajib Hasan (CSE)</li>
+          <li className="text-base font-roboto">Rahid Zaman (ME)</li>
+          <li className="text-base font-roboto">Adib Ibne Yousuf (EECE)</li>
+          <li className="text-base font-roboto">Rowshon Ara Mannan (EECE)</li>
+          <li className="text-base font-roboto">Shamaun Sobhan Shohan (AE)</li>
+          <li className="text-base font-roboto">Shamir Shakir Shishir (CSE)</li>
+          <li className="text-base font-roboto">Saiful Azad (CSE)</li>
+          <li className="text-base font-roboto">Sajib Hasan (CSE)</li>
         </ul>
         <p
           data-aos="fade-up"
           data-aos-duration="900"
-          className="text-sm font-roboto"
+          className="text-base font-roboto"
         >
           Now, we are taking some classes in weekend/holiday on Robotics/Micro
           Controller & spreading our knowledge among students. Motto: Soar

@@ -1,79 +1,7 @@
 import Image from "next/image";
 import React from "react";
-const teamMembers = [
-  {
-    name: "Nafiz Bin Hasnat",
-    role: "Club President",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: "Fahim Al Faruk",
-    role: "Club President",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: "Sanjid Jubaer Drubo",
-    role: "General Secretary ",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: ".........",
-    role: "Vice President of Online",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: "..........",
-    role: "Vice President of Project",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: "Nafis",
-    role: "Vice President of Design",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: "...........",
-    role: "Vice President of Technical",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-  {
-    name: ".........",
-    role: "Treasurer",
-    img: "/dummy.png",
-    description: "...................................",
-    linkedin: "https://linkedin.com/",
-    dribbble: "https://dribbble.com",
-    x: "https://x.com/",
-  },
-];
+import { teamMembers24 } from "@/constants";
+
 
 const Team24 = () => {
   return (
@@ -86,7 +14,7 @@ const Team24 = () => {
           Presidential Panel 2024-25
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 space-y-16">
-          {teamMembers.map((member, index) => (
+          {teamMembers24.map((member, index) => (
             <div key={index} className=" w-full ">
               <div
                 className="h-full flex flex-col items-center text-center  p-2 "

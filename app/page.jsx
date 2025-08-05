@@ -95,7 +95,7 @@ export default function Home() {
               <p
                 data-aos="fade-left"
                 data-aos-duration="800"
-                className="text-white text-sm"
+                className="text-white text-base"
               >
                 Becoming a member of the MIST Robotics Club is easy and
                 rewarding. Simply sign up through our website and attend our
@@ -143,9 +143,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" mt-20 flex w-full ">
+      <div className=" mt-20  flex w-full ">
         <div className="w-full flex gap-5 items-center flex-col">
-          <div className="container grid px-5 md:grid-cols-2 w-full grid-cols-1">
+          <div className="container grid px-5 mb-10 md:grid-cols-2 w-full grid-cols-1">
             <h1
               data-aos="fade-left"
               data-aos-duration="800"
@@ -158,7 +158,7 @@ export default function Home() {
               <p
                 data-aos="fade-right"
                 data-aos-duration="800"
-                className="text-sm"
+                className="mb-4"
               >
                 Welcome to the MIST Robotics Club, where innovation meets
                 collaboration. Dive into hands-on projects, engaging events, and
@@ -166,10 +166,10 @@ export default function Home() {
                 future of technology.
               </p>
               <div className="flex gap-2">
-                <button className="px-5 py-2 transition-all duration-300 bg-white hover:bg-[#67E78B] text-black font-origintech">
+                <button className="px-5 py-2 transition-all duration-300 bg-white hover:bg-[#67E78B] text-black font-origintech" data-aos='fade-down'>
                   JOIN
                 </button>
-                <button className="px-5 py-2 transition-all duration-300 text-white hover:bg-[#67E78B] hover:text-black hover:border-[#67E78B] font-origintech bg-black border border-white">
+                <button className="px-5 py-2 transition-all duration-300 text-white hover:bg-[#67E78B] hover:text-black hover:border-[#67E78B] font-origintech bg-black border border-white" data-aos='fade-up'>
                   Learn More
                 </button>
               </div>

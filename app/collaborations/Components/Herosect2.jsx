@@ -13,16 +13,16 @@ const Herosect2 = () => {
           <Image
             width={200}
             height={200}
-            className="object-cover object-center w-full"
+            className="object-cover object-center w-full h-96"
             alt="hero"
-            src="/dummy.png"
+            src="/arduino.jpg"
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center order-2 md:order-1">
-          <Lightbulb className="w-8 h-8 text-white" />
+          <Lightbulb className="w-10 mb-3 h-10 text-white animate-pulse" data-aos="fade-up"/>
           <h1
             className="title-font lg:text-4xl text-3xl mb-4 font-bold "
-            data-aos="fade-up"
+            data-aos="fade-up" 
           >
             Empowering Innovation: Our Collaboration with ABC Engineering
             Society

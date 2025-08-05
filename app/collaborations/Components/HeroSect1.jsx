@@ -75,12 +75,12 @@ const HeroSect1 = () => {
               Learn more
             </button>
             <button
-              className="ml-4 flex bg-transparent border-0 py-3 px-7 focus:outline-none group items-center  text-lg"
+              className="ml-4 flex bg-transparent group border-0 py-3 hover:underline px-7 transtion-all focus:outline-none group items-center  text-lg"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               Join Us
-              <ChevronRight className="text-white w-5 h-5" />
+              <ChevronRight className="text-white group-hover:ml-2 transtion-all w-5 h-5" />
             </button>
           </div>
         </div>
@@ -92,9 +92,9 @@ const HeroSect1 = () => {
           <Image
             width={200}
             height={200}
-            className="object-cover object-center w-full"
+            className="object-cover object-center w-full h-96"
             alt="hero"
-            src="/dummy.png"
+            src="/autonomous_car.jpg"
           />
         </div>
       </div>

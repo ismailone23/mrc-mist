@@ -10,17 +10,17 @@ export default function PhotoCard({ para, title, imgSrc, btn, ...rest }) {
       <div className="w-full h-52 overflow-hidden">
         <Image
           alt="mars_rover"
-          className="rounded-tr-xl"
+          className="rounded-tr-xl h-64 object-center object-cover"
           src={imgSrc}
           width={500}
           height={500}
         />
       </div>
-      <h1 className="text-white font-bold">{title}</h1>
-      <p className="text-white text-sm">{para}</p>
-      <button className="text-black cursor-pointer font-semibold px-4 py-2 rounded justify-center bg-[#67E78B] flex gap-2 items-center">
+      <h1 className="text-white text-lg mb-3 font-bold">{title}</h1>
+      <p className="text-white mb-2">{para}</p>
+      <button className="text-black group cursor-pointer font-semibold px-4 py-2 rounded justify-center bg-[#67E78B] flex gap-2 items-center">
         {btn}
-        <MoveRight className="text-black w-5" />
+        <MoveRight className="text-black group-hover:ml-1 transition-all w-6" />
       </button>
     </div>
   );

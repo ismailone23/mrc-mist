@@ -5,7 +5,8 @@ import HeroSect3 from "./Components/HeroSect3";
 
 const page = () => {
   return (
-    <div className="container mx-auto px-5 py-24 overflow-x-hidden">
+   <div className="container mx-auto px-5 py-12 overflow-x-hidden">
+      
       <div className="md:text-left text-center md:w-5/6 mx-auto w-full  py-10">
         <h2
           className="py-10 text-4xl md:text-6xl font-extrabold"
@@ -28,7 +29,7 @@ const page = () => {
       <div className="container md:justify-between mx-auto flex py-24 md:flex-row flex-col items-center">
         <div className="w-full my-5 md:my-0 ">
           <h2
-            className="md:text-5xl text-4xl font-extrabold"
+            className="md:text-5xl text-4xl font-extrabold text-center "
             data-aos="fade-up"
           >
             Join Us in Innovation
