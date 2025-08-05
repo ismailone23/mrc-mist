@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <div className="w-full bg-gradient-to-b from-[#2B2C32] to-[#000000]">
       <div className="w-full flex flex-col items-center h-full">
-        <div className="flex max-w-7xl gap-4 w-full flex-col py-5 px-4">
+        <div className="flex container gap-4 w-full flex-col py-5 px-5">
           <div className="w-full">
             <Image
               width={200}

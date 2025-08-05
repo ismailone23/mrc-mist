@@ -5,16 +5,16 @@ import React from "react";
 export default function Projects() {
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="max-w-7xl w-full flex px-4 flex-col">
-        <div className="flex items-center flex-col gap-4 mt-5 w-full">
+      <div className="container flex px-4 flex-col">
+        <div className="flex items-center flex-col gap-1 mt-5 w-full">
           <h1
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-duration="500"
-            className="text-3xl font-bold uppercase font-roboto"
+            className="text-4xl font-bold"
           >
             Projects
           </h1>
-          <p data-aos="fade-up" data-aos-duration="500" className="font-roboto">
+          <p data-aos="fade-down" data-aos-duration="600" className="text-sm">
             There are project showcased developed by the MRC in past with
             description
           </p>
